@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #E7CE51;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            max-width: 1200px;
+            background-color: #fff;
+            border-left: 3px solid black;
+            border-right: 3px solid black;
+            min-height: 100vh;
+        }
+
+        .header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #476E8C;
+            color: white;
+            height: 10vh;
+            border-top: 3px solid black;
+            border-bottom: 3px solid black;
+        }
+
+        .hero-section {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        .hero-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px; /* Added margin for spacing */
+        }
+
+        .hero-image img {
+            max-width: 70%; /* Adjusted image size */
+            height: auto;
+            border-radius: 20px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .hero-image img:hover {
+            transform: scale(1.05);
+        }
+
+        .choice {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 20px auto;
+        }
+
+        .choice h1 {
+            margin-bottom: 20px;
+        }
+
+        .level-buttons {
+            display: flex;
+            gap: 20px; /* Space between buttons */
+        }
+
+        .level-buttons button {
+            padding: 10px 20px;
+            border: 3px solid black;
+            border-radius: 11px;
+            background-color: #476E8C;
+            width: 100px;
+            color: white;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .level-buttons button:hover {
+            background-color: #E7CE51;
+            color: black;
+            font-weight: 700;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #476E8C;
+            color: white;
+            height: 10vh;
+            border-top: 3px solid black;
+            padding: 0 5%;
+        }
+
+        .footer a {
+            color: yellow;
+            text-decoration: none;
+            font-size: large;
+            font-weight: bold;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                width: 100%;
+            }
+
+            .hero-image img {
+                max-width: 90%;
+            }
+
+            .level-buttons {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .level-buttons button {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    {% load static %}
+    <div class="container">
+        <header class="header">
+            <h1>Welcome To The Game</h1>
+        </header>
+        <div class="hero-section">
+            <div class="hero-image">
+                <img src="{% static 'level.jpeg' %}" alt="guess-the-number">
+            </div>
+            <div class="choice">
+                <h1>Choose Level</h1>
+                <div class="level-buttons">
+                    <button><a href = "{% url 'Easy' %}" style="cursor: pointer; color: inherit; text-decoration: inherit;">Easy</a></button>
+                    <button><a href = "{% url 'Hard' %}" style="cursor: pointer; color: inherit; text-decoration: inherit;">Hard</a></button>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <p>© 2021 Number Guessing Game</p>
+            <p>Developed by: <a href="https://github.com/soaebhasan12" target="_blank">Soaeb Hasan</a></p>
+        </footer>
+    </div>
+</body>
+</html>
