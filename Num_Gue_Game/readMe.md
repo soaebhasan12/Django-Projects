@@ -57,8 +57,8 @@ Num_Gue_Game/
 ## Installation
 
 ```markdown
-1. Clone the repository:
    ```bash
+1. Clone the repository:
    git clone https://github.com/your-username/number-guessing-game.git
    cd number-guessing-game
    ```
@@ -85,57 +85,48 @@ Num_Gue_Game/
    ```
 
 6. Access the application:
-   ```markdown
+   ```bash
    Open your browser and navigate to: http://127.0.0.1:8000/
    ```
+```
 ```
 
 ## Usage
 
-```markdown
 1. Navigate to the **Home Page**
 2. Click on **"Play Game"** to proceed to the level selection page
 3. Choose between **Easy** or **Hard** difficulty levels
 4. Enter your guesses and follow the feedback provided
 5. Reset the game or play again after winning or losing
-```
 
+   
 ## Technologies Used
 
-```markdown
 - **Backend**: Django 4.2
 - **Frontend**: HTML5, CSS3
 - **Database**: SQLite3
 - **Development Tools**: Visual Studio Code, Git
-```
+
 
 ## Contributing
 
-```markdown
 1. Fork the repository
 2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
 3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
-```
 
 ## License
 
-```markdown
 Distributed under the MIT License. See `LICENSE` for more information.
-```
 
 ## Contact
 
-```markdown
-Soaeb Hasan - [@your_twitter](https://twitter.com/your_username)
-Project Link: [https://github.com/soaebhasan12/number-guessing-game](https://github.com/soaebhasan12/number-guessing-game)
-```
+- LinkedIn - [@Soaeb Hasan](https://www.linkedin.com/in/saibu-hassaa-789827360)
+- Project Link: [https://github.com/soaebhasan12/Django-Projects/tree/main/Num_Gue_Game](https://github.com/soaebhasan12/Django-Projects/tree/main/Num_Gue_Game)
 
 ## Acknowledgements
 
-```markdown
 - [Django Documentation](https://docs.djangoproject.com/)
 - [Python Documentation](https://docs.python.org/)
 - [Font Awesome](https://fontawesome.com)
-```
